@@ -58,9 +58,8 @@ const cacheFirst = async (req) => {
   if (cacheHit) {
     return cacheHit;
   }
-  const fontCache = await caches.open(FONTS_CACHE_NAME);
   const font = await fetch(req);
-  await fontCache.put(req.url, font.clone());
+  await fontsCache.put(req.url, font.clone());
   return font;
 };
 
