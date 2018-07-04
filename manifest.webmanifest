@@ -2,6 +2,7 @@
   "name": "Wikipedia Pageviews Battle",
   "short_name": "WikiBattle",
   "display": "standalone",
+  "start_url": "https://tomayac.github.io/wikibattle/",
   "background_color": "#eee",
   "theme_color": "blue",
   "dir": "ltr",
