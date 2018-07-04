@@ -1,4 +1,17 @@
 ((doc, $, win, nav) => {
+  const DEFAULT_VAL_1 = 'Donald Trump';
+  const DEFAULT_VAL_2 = 'Barack Obama';
+
+  const article1 = $('article1');
+  const article2 = $('article2');
+  const button = $('button');
+  const form = $('form');
+  const progress = $('progress');
+  const views1 = $('views1');
+  const views2 = $('views2');
+  const results = $('results');
+  const spinner = $('spinner');
+  const message = $('message');
 
   win.addEventListener('load', () => {
     if ('serviceWorker' in nav) {
@@ -21,20 +34,6 @@
   ['online', 'offline'].forEach(state => {
     win.addEventListener(state, checkOnlineState);
   });
-
-  const DEFAULT_VAL_1 = 'Donald Trump';
-  const DEFAULT_VAL_2 = 'Barack Obama';
-
-  const article1 = $('article1');
-  const article2 = $('article2');
-  const button = $('button');
-  const form = $('form');
-  const progress = $('progress');
-  const views1 = $('views1');
-  const views2 = $('views2');
-  const results = $('results');
-  const spinner = $('spinner');
-  const message = $('message');
 
   const url = (_, article) => {
     article = article.trim();
