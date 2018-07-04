@@ -4,7 +4,7 @@ const ALLOWED_CACHES = [OFFLINE_CACHE_NAME, FONTS_CACHE_NAME];
 
 const OFFLINE_ASSETS = [
   'index.html',
-  '/',
+  './',
   'waterloo.png',
   'main.css',
   'main.js',
