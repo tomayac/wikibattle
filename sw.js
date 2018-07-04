@@ -6,6 +6,7 @@ const OFFLINE_ASSETS = [
   'index.html',
   './',
   'waterloo.png',
+  'icon.png',
   'main.css',
   'main.js',
   'manifest.webmanifest',

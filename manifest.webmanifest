@@ -1,3 +1,17 @@
 {
-  "name": "WikiBattle"
+  "name": "Wikipedia Pageviews Battle",
+  "short_name": "WikiBattle",
+  "display": "standalone",
+  "background_color": "#eee",
+  "theme_color": "blue",
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
 }
