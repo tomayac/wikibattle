@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+ font-display: swap;
+}
+
+html, body {
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 12pt;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 640px;
+}
+
+body.offline {
+  cursor: not-allowed;
+  opacity: .2;
+  pointer-events: none;
+}
+
+body.offline #message::after {
+  content: " 📶 Offline";
+}
+
+h1 {
+  background: url('waterloo.png') no-repeat;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2em;
+  height: 292px;
+  margin: 0;
+  padding: 1em;
+  width: 640px;
+  max-width: 100%;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.container {
+  align-items: baseline;
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+#results {
+  width: 100%;
+}
+
+.contestant {
+  text-align: center;
+  width: 100%;
+}
+
+.separator {
+  flex-shrink: 2;
+  padding: .1em;
+}
+
+button, input {
+  border: none;
+  font-size: 1.5em;
+  margin: .5em 0;
+  padding: .1em;
+}
+
+progress {
+  -webkit-appearance: none;
+  width: 100%;
+  font-size: 2.5em;
+}
+
+::-webkit-progress-bar {
+  background-color: orange;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+}
+
+input {
+  width: 100%;
+}
+
+#article1 {
+  background-color: #008000;
+  color: #fff;
+}
+
+#article2 {
+  background-color: #ffa500;
+  color: #000;
+}
+
+#views1, #views2 {
+  width: 100%;
+  position: relative;
+  padding: 0 1em;
+  top: -2.25em;
+}
+
+#views1 {
+  text-align: left;
+  color: #fff;
+}
+
+#views2 {
+  text-align: right;
+  color: #000;
+}
+
+button {
+  color: #fff;
+  background-color: blue;
+  width: 100%;
+}
+
+.winner::before {
+  content: " 🏆 ";
+}

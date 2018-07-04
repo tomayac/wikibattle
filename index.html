@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="manifest.webmanifest" rel="manifest">
+    <script async src="main.js"></script>
+    <title>Wikipedia Pageviews Battle</title>
+  </head>
+  <body>
+    <h1>Wikipedia Pageviews Battle</h1>
+    <form id="form" autocomplete="off">
+      <div class="container">
+        <div class="contestant">
+          <input disabled id="article1"/>
+        </div>
+        <div class="separator">vs.</div>
+        <div class="contestant">
+          <input disabled id="article2"/>
+        </div>
+      </div>
+      <div class="container">
+        <button disabled id="button" type="submit" value="Compare">Compare</button>
+      </div>
+    </form>
+    <div hidden id="results">
+      <div class="container">
+        <progress id="progress" max="100" value="50"></progress>
+      </div>
+      <div class="container">
+        <div id="views1"></div>
+        <div id="views2"></div>
+      </div>
+    </div>
+    <div id="message"></div>
+    <div hidden id="spinner">⏳</div>
+  </body>
+</html>
